@@ -32,6 +32,42 @@ const videos = [
         duration: '4 mins',
         name: 'IKISINE BIRDEN ANCA YETIYOR'
     },
+    {
+        id: 5,
+        poster: '/video/5/poster',
+        duration: '4 mins',
+        name: 'IKISINE BIRDEN ANCA YETIYOR'
+    },
+    {
+         id: 6,
+         poster: '/video/6/poster',
+         duration: '4 mins',
+         name: 'IKISINE BIRDEN ANCA YETIYOR'
+     },
+     {
+         id: 7,
+         poster: '/video/7/poster',
+         duration: '4 mins',
+         name: 'IKISINE BIRDEN ANCA YETIYOR'
+     },
+     {
+         id: 8,
+         poster: '/video/8/poster',
+         duration: '4 mins',
+         name: 'IKISINE BIRDEN ANCA YETIYOR'
+     },
+     {
+         id: 9,
+         poster: '/video/9/poster',
+         duration: '4 mins',
+         name: 'IKISINE BIRDEN ANCA YETIYOR'
+     },
+     {
+         id: 10,
+         poster: '/video/10/poster',
+         duration: '4 mins',
+         name: 'IKISINE BIRDEN ANCA YETIYOR'
+     },
 ]
 
 app.get('/video', (req, res, next) => {
@@ -41,6 +77,9 @@ app.get('/video', (req, res, next) => {
 
 
 app.get('/videos', (req, res) => res.json(videos));
+
+
+
 
 app.get('/video/:id/data', (req, res) => {
     const id = parseInt(req.params.id, 10);
